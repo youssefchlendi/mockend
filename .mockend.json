@@ -5,10 +5,21 @@
 		  "hasMany": "Comment"
 		}
 	  },
+	  "User":{
+		"name":{"string":{}},
+		"email":{"string":{}},
+		"comments":{
+			"hasMany":"Comment"
+		}
+	  },
 	  "Comment": {
 		"body": { "string": {} },
+		"sender":{
+			"belongsTo": "User"
+		},
 		"post": {
 		  "belongsTo": "Post"
 		}
 	  }
+	  
 }
