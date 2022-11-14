@@ -7,7 +7,7 @@
 	  },
 	  "User":{
 		"name":{"string":{}},
-		"email":{"string":{ "regexp": "[a-z]{5,10}@[a-z]{5}\\.[a-z]{2,3}" }},
+		"email":{"email":{ "regexp": "[a-z]{5,10}@[a-z]{5}\\.[a-z]{2,3}" }},
 		"comments":{
 			"hasMany":"Comment"
 		}
